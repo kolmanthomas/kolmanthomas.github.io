@@ -20,5 +20,5 @@ This will involve getting familiar with the Octave codebase, which is written in
 I will be posting regularly on this blog about my thoughts and progress on either Chebfun, GNU Octave internals, or the theory behind Chebyshev polynomials.
 The first post that is likely to follow will be a preliminary compilation of (up-to-date) classdef-related issues in GNU Octave.
 
-I sincerely wish that these diary entries will be useful to future GSoC students, people interested in Chebfun, compiler design, numerical analysis or really or any reason. 
+I sincerely wish that these diary entries will be useful to future GSoC students, people interested in Chebfun, compiler design, numerical analysis or for any reason. 
 
