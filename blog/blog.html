@@ -1,0 +1,61 @@
+---
+title: blog
+---
+
+<html>
+<head>
+    <title>Thomas Kolman</title>
+    <meta charset='UTF-8'>
+    <meta content='width=device-width, initial-scale=1' name='viewport'/>
+
+    <meta name='description' content='The personal website of Thomas Kolman.'>
+    <!-- A decent browser will parse this fine:
+         https://webmasters.stackexchange.com/questions/92744. -->
+    <meta name='keywords' content='
+        machine learning,
+        statistics,
+        numerical analysis,
+        computer science
+    '>
+    <meta name='author' content='Thomas Kolman'>
+
+    <link rel='shortcut icon' href='/favicon.png?v=e' />
+    <link href='/css/blog.css' rel='stylesheet'/>
+
+    {% include mathjax.html %}
+</head>
+<body>
+    {% include nav.html %}
+    <div id='blog' class='wrap'>
+        <div id='intro'>
+            <div class='quote'>
+                <p>I have had my results for a long time; but I do not yet know how I am to arrive at them.</p>
+                <p> </p>
+                <a>Carl Friedrich Gauss</a>
+            </div>
+        </div>
+        <div id='posts' class='section'>
+            {% for post in site.posts %}
+                <div class='post-row'>
+                    <p class='post-title'>
+                        <a href="{{ post.url }}">
+                            {% katexmm %}
+                            {{ post.title }}
+                            {% endkatexmm %}
+                        </a>
+                    </p>
+                    <p class='post-date'>
+                        {{ post.date | date_to_long_string }}
+                    </p>
+                </div>
+                <p class='post-subtitle'>
+                    {% katexmm %}
+                    {{ post.subtitle }}
+                    {% endkatexmm %}
+                </p>
+                <span class='hidden'>{{ forloop.index }}</span>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>
