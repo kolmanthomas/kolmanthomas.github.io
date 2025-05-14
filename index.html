@@ -21,6 +21,10 @@ title: blog
 
     <link rel='shortcut icon' href='/favicon.png?v=e' />
     <link href='/css/blog.css' rel='stylesheet'/>
+    <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
 
     {% include mathjax.html %}
 </head>
@@ -39,9 +43,11 @@ title: blog
                 <div class='post-row'>
                     <p class='post-title'>
                         <a href="{{ post.url }}">
-                            {% raw %}
+                            <div>
+                                <b>
                             {{ post.title }}
-                            {% endraw %}
+                                </b>
+                            </div>
                         </a>
                     </p>
                     <p class='post-date'>
@@ -49,9 +55,9 @@ title: blog
                     </p>
                 </div>
                 <p class='post-subtitle'>
-                    {% raw %}
+                    <div>
                     {{ post.subtitle }}
-                    {% endraw %}
+                    <div>
                 </p>
                 <span class='hidden'>{{ forloop.index }}</span>
             {% endfor %}
