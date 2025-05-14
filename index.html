@@ -39,9 +39,9 @@ title: blog
                 <div class='post-row'>
                     <p class='post-title'>
                         <a href="{{ post.url }}">
-                            {% katexmm %}
+                            {% mathjax_csp_sources %}
                             {{ post.title }}
-                            {% endkatexmm %}
+                            {% mathjax_csp_sources %}
                         </a>
                     </p>
                     <p class='post-date'>
@@ -49,9 +49,9 @@ title: blog
                     </p>
                 </div>
                 <p class='post-subtitle'>
-                    {% katexmm %}
+                    {% mathjax_csp_sources %}
                     {{ post.subtitle }}
-                    {% endkatexmm %}
+                    {% mathjax_csp_sources %}
                 </p>
                 <span class='hidden'>{{ forloop.index }}</span>
             {% endfor %}
