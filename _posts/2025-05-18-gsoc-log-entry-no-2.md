@@ -9,7 +9,7 @@ published: true
 
 Week 1 has wrapped up, and I've done enough poking around to get a good sense of the project scope. 
 Most of my activity was spent getting familiar with the Chebfun codebase, setting up the blog, and continuing a bit of the mathematical self-study.
-My midterm evaluation start date is on June 30th, so I've set out some reasonable goals to achieve by then.
+My midterm evaluation start date is on July th, so I've set out some reasonable goals to achieve by then.
 Here they are:
 
 ## Checklist for the midterm evaluation
@@ -42,17 +42,19 @@ The blog post will contain some information about GNU Octave internals, so if yo
 
 - [ ] Compile a list of 'hacks' required to get Chebfun working.
 
-The Git history will be definite enough to keep track of all the hacks, but I want to keep a master list of Octave hacks in octave_notes.txt (found in the repo) so that future contributors can quickly get up to speed.
+The Git history of the port will be definite enough to keep track of all the workarounds applied, but I want to keep a master list of such in octave_notes.txt (found in the repo) so that future contributors can quickly get up to speed.
 
 - [ ] Write extensive Built-In Self Tests (BISTs) for Chebfun functionality. 
 
 Chebfun already has its own suite of tests that ensure package correctness.
-The published Octave BISTs will focus more on code changes to the Chebfun fork to see if the code modified any of the expected behaviour of the program.
+The published Octave BISTs will focus more on code changes to the Chebfun fork, in order to see if the changes modified any of the expected behaviour of Chebfun.
 
-- [ ] Fix at least *one* classdef issue in Octave proper.
+- [ ] Fix *at least one* classdef issue in Octave proper.
 
-Ideally, the classdef bug to be patched will be one that plagues the Chebfun codebase.
+Ideally, the classdef bug to be patched will be one that plagues the Chebfun codebase somehow.
 I have not decided on which bug I will dedicate my time to, or how many bugs I could realistically fix; that is something I will learn with experience.
+The dream would be if Chebfun would immediately start working after a few core Octave patches applied, but since this is very unclear if it is even feasible, I cannot rely on this being the path forward for the port.
+
 I've already submitted a patch to Octave proper using Mercurial and GNU Savannah, so I'm familiar with the workflow.
 
 - [ ] Report any bugs I encounter.
