@@ -9,7 +9,7 @@ published: true
 
 Week 1 has wrapped up, and I've done enough poking around to get a good sense of the project scope. 
 Most of my activity was spent getting familiar with the Chebfun codebase, setting up the blog, and continuing a bit of the mathematical self-study.
-My midterm evaluation start date is on July th, so I've set out some reasonable goals to achieve by then.
+My midterm evaluation start date is on July 7th, so I've set out some reasonable goals to achieve by then.
 Here they are:
 
 ## Checklist for the midterm evaluation
